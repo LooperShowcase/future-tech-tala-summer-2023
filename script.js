@@ -37,7 +37,7 @@ async function openai_test() {
 
       const message = responseData.choices[0].message.content;
       console.log(message);
-      conversationAssistntAdd(message);
+      conversationAssistantAdd(message);
       const utterance = new SpeechSynthesisUtterance(message);
       speechSynthesis.speak(utterance);
       return message;
